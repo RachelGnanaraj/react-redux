@@ -2,10 +2,12 @@
   "name": "todos",
   "version": "0.0.1",
   "private": true,
+  "homepage": "https://rachelgnanaraj.github.io/react-redux/",
   "devDependencies": {
     "enzyme": "^2.8.2",
     "react-addons-test-utils": "^15.5.1",
-    "react-scripts": "^1.0.2"
+    "react-scripts": "^1.0.2",
+    "gh-pages": "^1.0.0"
   },
   "dependencies": {
     "prop-types": "^15.5.10",
@@ -15,6 +17,8 @@
     "redux": "^3.5.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
